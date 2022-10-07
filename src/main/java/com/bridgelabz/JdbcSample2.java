@@ -22,7 +22,7 @@ public class JdbcSample2 {
            try{
                con = DriverManager.getConnection(URL, USER, PASS);
                Statement statement = con.createStatement();
-               statement.execute("update employee_payroll set salary=160000 where name='Bill'");
+               statement.execute("update employee_payroll set salary=3000000.00 where name='Terisa'");
                ResultSet result =  statement.executeQuery("select * from employee_payroll");
                while(result.next()){
                    System.out.println(result.getInt("id")+" " +
